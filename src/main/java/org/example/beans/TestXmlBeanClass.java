@@ -6,4 +6,6 @@ public class TestXmlBeanClass {
         System.out.println("Class Name is " + this.getClass().getSimpleName());
     }
 
+
+
 }
