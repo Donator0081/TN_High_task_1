@@ -8,12 +8,9 @@ import org.example.beans.TestXmlBeanClass;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-/**
- * Hello world!
- *
- */
 public class App {
-    public static void main( String[] args ) {
+
+    public static void main(String[] args) {
         var xmlApplicationContext = new ClassPathXmlApplicationContext("config.xml");
         TestXmlBeanClass xmlBeanClass = xmlApplicationContext.getBean(TestXmlBeanClass.class);
         xmlBeanClass.displayInfo();
