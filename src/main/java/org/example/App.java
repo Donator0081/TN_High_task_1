@@ -14,9 +14,11 @@ public class App {
         var xmlApplicationContext = new ClassPathXmlApplicationContext("config.xml");
         TestXmlBeanClass xmlBeanClass = xmlApplicationContext.getBean(TestXmlBeanClass.class);
         xmlBeanClass.displayInfo();
+
         var annotationConfigApplicationContext = new AnnotationConfigApplicationContext(JavaConfigBean.class);
         var innerConfigBean = annotationConfigApplicationContext.getBean(JavaConfigBeanTestClass.class);
         innerConfigBean.displayInfo();
+
         var annotationBean = annotationConfigApplicationContext.getBean(AnnotationBean.class);
         annotationBean.displayInfo();
 
